@@ -10,4 +10,7 @@ cv.imshow("Gaussian blur", gauss)
 #median 
 median=cv.medianBlur(img,7) 
 cv.imshow("median blur", median)
+#bilateral filter
+bilateral=cv.bilateralFilter(img,20,160,150) #blur image but keeps edges fairly sharp 
+cv.imshow("bilateral filter blur", bilateral)
 cv.waitKey(0)
